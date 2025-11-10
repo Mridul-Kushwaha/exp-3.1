@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Search</title>
+</head>
+<body>
+    <h2>Search Employee</h2>
+
+    <!-- Search by ID -->
+    <form action="EmployeeServlet" method="get">
+        <label>Enter Employee ID:</label>
+        <input type="number" name="id" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <hr>
+
+    <!-- Fetch all employees -->
+    <form action="EmployeeServlet" method="get">
+        <input type="hidden" name="all" value="true">
+        <button type="submit">Show All Employees</button>
+    </form>
+
+</body>
+</html>
